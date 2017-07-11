@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+
+<meta name="viewport" content="width-device-width", initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link ref="stylesheet" href="resources/css/bootstrap.css">
+<link ref="stylesheet" href="resources/css/font-awsome.css">
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body ng-app="app">
+
+<!-- <div data-ng-include="'header.html'"></div> -->
+<!-- <div ng-include src="'header.html'"></div> -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Collaboration</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blogs <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#create_blog">Add New Blog</a></li>
+          <li><a href="#list_Blog">Show List of Blogs</a></li>
+                </ul>
+      </li>
+      
+      
+      
+       <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Friends <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#search_friend">search Friend</a></li>
+          <li><a href="#view_friend">View Friends</a></li>
+                </ul>
+      </li>
+      
+      
+      
+       <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#search_friend">search Job</a></li>
+          <li><a href="#/postJob">Post New Job</a></li>
+                </ul>
+      </li>
+      
+      
+       <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chat Forum <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#create_chat_forum">Create chat Forum</a></li>
+          <li><a href="#list_chat_forum">View Existing forum</a></li>
+                </ul>
+      </li>
+      
+      
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+ 
+</div>
+
+
+
+
+<br>
+
+<div ng-view></div>
+
+<!-- <script src="resources/js/jquery.js"></script>
+<script src="resources/js/bootstrap.js"></script>
+
+<script src="resources/js/angular.js"></script>
+<script src="resources/js/angular-route.js"></script>
+<script src="resources/js/angular-cookies.js"></script>
+
+<script src="resources/js/sockjs.js"></script>
+<script src="resources/js/    .js"></script> -->
+
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js">
+	
+</script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js">
+	
+</script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js">
+	
+</script>
+
+
+<script type="text/javascript" src="js/app.js"></script>
+<!-- <script type="text/javascript" src="controllers/usercontroller.js"></script>
+<script type="text/javascript" src="services/userservice.js"></script>
+<script type="text/javascript" src="controllers/jobController.js"></script>
+<script type="text/javascript" src="services/jobService.js"></script>
+<script type="text/javascript" src="controllers/blogcontroller.js"></script>
+<script type="text/javascript" src="services/blogservice.js"></script> -->
+
+
+
+</body>
+</html>

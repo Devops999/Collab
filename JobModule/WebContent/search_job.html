@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" ng-controller="JobController as ctrl">
+
+  <div class="from-group">
+  
+  
+  Search for job
+  
+  <p><input type="text" ng-model="search_text"></input></p>
+  
+  <div ng-repeat="job in ctrl.jobs | filter:search_text"">
+  <fieldset>
+  <legend>
+  </legend>
+  
+  <p>
+   Id:{{job.id}} &nbps;&nbps;&nbps;
+   <a href="#" ng-click="ctrl.getJobDetails(job.id)">Get jOb Details</a>
+   </a>
+   
+   &nbps;&nbps;&nbps;
+   <button type="button "  ng-click="ctrl.applyForJob(job.id)"
+   clas="btn btn-warning  btn-sn">Apply for Job</button>
+   </p>
+   
+   <p> title:{{job.title}}</p>
+   <p>Qualification:{{job.qualification}}
+   </p>
+   </fieldset>
+   </div>
+   </div>
+   </div>
+
+</body>
+</html>

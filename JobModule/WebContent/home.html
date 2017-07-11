@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-controller="UserController as ctrl">
+  <br><br> {{currentUser.id}}
+  <div ng-show="currentUser.id">
+    <div class="nav navbar-nav navbar-left>
+welcome:{{currentUser.name}} | <a href="#" ng-click="ctrl.logout()">
+Logout</a>
+  </div>
+
+
+<div class="nav navbar-nav navbar-right>
+<a href="#" ng-click="ctrl.myProfile()">My profile</a>
+</div>
+
+
+<div ng-include="'c_admin/admin_menu.htm'"></div>
+</div>
+
+</div>
+
+
+<div ng-hide="currentUser.id" class="container">
+<div class="nav navbar-nav navbar-right">
+<a href="#/login">Login</a>
+</div>
+</div>
+<br> <br> <br>
+
+
+<div class="row">
+
+<div class="col-sn-4">
+<h3 class="bg-primary">Jobs</h3>
+<p> you can view and apply jobs</p>
+<p>You can apply for a particular job after login</p>
+img ng-src="resources/img/job.JPG</img>
+</div>
+
+<div class="col-sn-4">
+<h3 class="bg-primary"> Blogs</h3>
+<p> you can view the blogs before login</p>
+<p>if you want to write the blog,you need to login. The blog can be approved/rejected by admin.</p>
+<img ng-src="resources/img/blog.JPG" ></img>
+</div>
+
+<div class="col-sn-4">
+<h3 class="bg-primary">Alumni/Student</h3>
+<p> This site is mainly for alumni and students of this Organization...</p>
+<img ng-src="resources/img/student.JPG></img>
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>
