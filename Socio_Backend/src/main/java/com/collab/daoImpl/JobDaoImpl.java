@@ -49,7 +49,7 @@ catch(HibernateException e){
 	
 	
 	
-	public List<Job> getAllOpenedJobs() {
+	/*public List<Job> getAllOpenedJobs() {
 		// TODO Auto-generated method stub
 		logger.debug("Starting of method getAllOpenedJObs");
 	String hql="from Job where status='"+"V'";
@@ -58,7 +58,7 @@ catch(HibernateException e){
 	return (List<Job>) sessionFactory.getCurrentSession().createCriteria(Job.class)
 			.add(Restrictions.eqProperty("status", "V")).list();	
 		return query.list();
-	}
+	}*/
 
 	public Job getJobDetails(Long id) {
 		// TODO Auto-generated method stub
